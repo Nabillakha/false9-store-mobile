@@ -37,11 +37,11 @@ artinya : constraint dari parent ke child, dan untuk ukuran child memberi tahu u
 ### 2. Widget yang Digunakan dan Fungsinya
 Beberapa widget yang digunakan dalam proyek ini antara lain:
 - **MaterialApp** : Sebagai root widget yang menyediakan tema, dan struktur dasar aplikasi.  
-- **Scaffold** → Menyediakan struktur dasa halaman seperti `AppBar`, `Body`.  
-- **AppBar** → Menampilkan bagian atas yang berisi judul. 
+- **Scaffold** : Menyediakan struktur dasa halaman seperti `AppBar`, `Body`.  
+- **AppBar** : Menampilkan bagian atas yang berisi judul. 
 - **Padding** :  Memberikan jarak (spasi) di sekitar widget child-nya agar tampilan tidak terlalu menempel di tepi layar.  
 - **Column** : Menyusun widget child secara **vertikal** (dari atas ke bawah). Digunakan untuk menata elemen seperti `InfoCard`, teks sambutan, dan grid item.
-- **Row** → Menyusun widget secara horizontal, digunakan untuk menampilkan tiga `InfoCard` sejajar. 
+- **Row** : Menyusun widget secara horizontal, digunakan untuk menampilkan tiga `InfoCard` sejajar. 
 - **SizedBox** : Menyediakan jarak kosong (spacer) antar elemen UI dengan ukuran 16 unit.
 - **Center** : Menempatkan widget child tepat di tengah area yang tersedia.
 - **Card** : Membungkus konten dalam bentuk kotak dengan efek bayangan (elevation). Dipakai untuk menampilkan informasi seperti `NPM`, `Name`, dan `Class`.
