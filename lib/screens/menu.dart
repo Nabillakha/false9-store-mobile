@@ -103,8 +103,20 @@ class ItemCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Color cardColor = Theme.of(context).colorScheme.secondary;
+    switch (item.name) {
+      case "All Products":
+        cardColor = Colors.blue;
+        break;
+      case "My Products":
+        cardColor = Colors.green;
+        break;
+      case "Add Product":
+        cardColor = Colors.red;
+        break;
+    }
     return Material(
-      color: Theme.of(context).colorScheme.secondary,
+      color: cardColor,
       borderRadius: BorderRadius.circular(12),
       child: InkWell(
         onTap: () {
