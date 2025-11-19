@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:false9_store/widgets/left_drawer.dart';
 import 'package:false9_store/screens/productlist_form.dart';
+import 'package:false9_store/screens/product_entry_list.dart';
 
 class MyHomePage extends StatelessWidget {
   MyHomePage({super.key});
@@ -131,6 +132,23 @@ class ItemCard extends StatelessWidget {
               context,
               MaterialPageRoute(builder: (context) => const ProductFormPage()),
             );
+          }else if (item.name == "All Products") {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const ProductEntryListPage()
+                  ),
+              );
+          }
+          else if (item.name == "My Products") {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const ProductEntryListPage(
+                          filterByUser: true,
+                      ),
+                  ),
+              );
           }
         },
         child: Container(

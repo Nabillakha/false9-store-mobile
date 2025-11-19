@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:false9_store/screens/menu.dart';
 import 'package:false9_store/screens/productlist_form.dart';
+import 'package:false9_store/screens/product_entry_list.dart';
+import 'package:false9_store/screens/login.dart';
 
 class LeftDrawer extends StatelessWidget {
   const LeftDrawer({super.key});
@@ -57,6 +59,28 @@ class LeftDrawer extends StatelessWidget {
                 context,
                 MaterialPageRoute(builder: (context) => const ProductFormPage()),
               );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.list_alt),
+            title: const Text('Product List'),
+            onTap: () {
+                // Route to product list page
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const ProductEntryListPage()),
+                );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.logout),
+            title: const Text('Logout'),
+            onTap: () {
+                // Route to product list page
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const LoginApp()),
+                );
             },
           ),
         ],
